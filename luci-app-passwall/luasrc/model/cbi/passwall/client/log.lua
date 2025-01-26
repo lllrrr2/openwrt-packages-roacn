@@ -12,10 +12,13 @@ f:append(Template(appname .. "/log/log"))
 fb = SimpleForm('backup-restore')
 fb.reset = false
 fb.submit = false
-s = fb:section(SimpleSection, translate("Backup and Restore"), translate("Backup or Restore Client and Server Configurations."))
-o = s:option(DummyValue, '', nil)
-o.template =  appname .. "/log/backup_restore"
+s = fb:section(SimpleSection, translate("Backup and Restore"), translate("Backup or Restore Client and Server Configurations.") ..
+							"<br><font color='red'>" ..
+							translate("Note: Restoring configurations across different versions may cause compatibility issues.") ..
+							"</font>")
 
+s.anonymous = true
+s:append(Template(appname .. "/log/backup_restore"))
 
 local backup_files = {
     "/etc/config/passwall",
