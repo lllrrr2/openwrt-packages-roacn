@@ -1,14 +1,11 @@
 msgid "wolplus"
-msgstr "网络唤醒Plus"
-
-msgid "WOL Plus"
-msgstr "网络唤醒Plus-增强版"
+msgstr "网络唤醒++"
 
 msgid "Wake up your LAN device"
-msgstr "网络唤醒您的局域网设备"
+msgstr "唤醒你的局域网设备"
 
 msgid "macclient"
-msgstr "客户端MAC设备列表"
+msgstr "设备列表"
 
 msgid "name"
 msgstr "名称"
